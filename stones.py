@@ -1,5 +1,6 @@
 from selenium import webdriver 
 from selenium.webdriver.common.by import By
+import time
 
 # Test Setup
 driver = webdriver.Chrome()
@@ -54,3 +55,5 @@ msg_Path = "div[id='trialCompleteBanner'] >h4"
 complete_msg = driver.find_element(By.CSS_SELECTOR,msg_Path)
 # Run Script
 assert complete_msg.text == 'Trial Complete'
+time.sleep(5)
+driver.close()
