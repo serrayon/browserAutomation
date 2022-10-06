@@ -15,14 +15,18 @@ btn_1_Path = "button[id='r1Btn']"
 btn_element = driver.find_element(By.CSS_SELECTOR, btn_1_Path)
 btn1_Element = driver.find_element(By.CSS_SELECTOR, btn_1_Path)
 btn1_Element.click()
+
+
 """""
 # Riddle of Stone retrieve answer
 bamboo_path = "div[id='passwordBanner'] >4"
 bamboo_element = driver.find_element(By.CSS_SELECTOR, bamboo_path)
+
 answer_1 = driver.find_element(By.CSS_SELECTOR, bamboo_path)
-
-password = answer_1"""""
-
+password = answer_1
+text = driver.find_element(By.CSS_SELECTOR, bamboo_path).text
+bamboo_element.send_keys(text)
+"""""
 input_2_Path = "input[id='r2Input']"
 element_2 = driver.find_element(By.CSS_SELECTOR, input_2_Path)
 input2Element = driver.find_element(By.CSS_SELECTOR,input_2_Path)
