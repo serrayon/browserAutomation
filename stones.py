@@ -49,3 +49,8 @@ btn3_element.click()
 btn4_Path = "button[id='checkButn']"
 btn4_element =  driver.find_element(By.CSS_SELECTOR, btn4_Path)
 btn4_element.click()
+
+msg_Path = "div[id='trialCompleteBanner'] >h4"
+complete_msg = driver.find_element(By.CSS_SELECTOR,msg_Path)
+# Run Script
+assert complete_msg.text == 'Trial Complete'
