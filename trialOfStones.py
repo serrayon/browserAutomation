@@ -37,7 +37,7 @@ merchant_answer_butn = driver.find_element_by(By.CSS_SELECTOR,merch_ans_path)
 check_Path = "button[name='checkButn']"
 check_butn = driver.find_element_by(By.CSS_SELECTOR,check_Path)
 
-msg_Path = "div[id='trialCompleteBanner h4']"
+msg_Path = "div[id='trialCompleteBanner > h4']"
 complete_msg = driver.find_element_by(By.CSS_SELECTOR,msg_Path)
 # Run Script
 
