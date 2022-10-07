@@ -55,5 +55,5 @@ msg_Path = "div[id='trialCompleteBanner'] >h4"
 complete_msg = driver.find_element(By.CSS_SELECTOR,msg_Path)
 # Run Script
 assert complete_msg.text == 'Trial Complete'
-time.sleep(5)
+time.sleep(4)
 driver.close()
