@@ -30,7 +30,7 @@ class PopUp(unittest.TestCase):
             modal_password = driver.find_element(By.XPATH, '//*[@id="SignIn_password_password"]')
             modal_password.click()
             time.sleep(2)
-            modal_password.send_keys('360723Oas!')
+            modal_password.send_keys('1234Pass!')
             time.sleep(3)
 
             sign_in_element = driver.find_element(By.XPATH,'//*[@id="SignIn"]/ul/li[3]/button')
